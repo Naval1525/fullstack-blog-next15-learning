@@ -1,11 +1,13 @@
 
 
 import LeftSidebar from "@/components/dashboard/left-sidebar";
+import Navbar from "@/components/home/header/navbar";
 import React, { ReactNode } from "react";
 
 const layout = ({ children }: { children: ReactNode }) => {
   return (
     <div className="min-h-screen w-full">
+      <Navbar/>
       <div className="flex">
         <LeftSidebar />
         <div className="flex-1">{children}</div>
