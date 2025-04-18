@@ -33,7 +33,7 @@ const Layout = async ({ children }: { children: React.ReactNode }) => {
   // Always render the layout with children, regardless of authentication status
   return (
     <div>
-      <Navbar />
+
       {children}
     </div>
   );
